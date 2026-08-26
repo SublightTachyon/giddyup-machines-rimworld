@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GM_FuelConsumption>Consumption: {0} chemfuel / cell</GM_FuelConsumption>
+  <GM_OutOfFuelMessage>{0} is out of fuel. Its rider has dismounted.</GM_OutOfFuelMessage>
+  <GM_CannotMountNoFuel>Cannot mount {0}: no chemfuel.</GM_CannotMountNoFuel>
+  <GM_RefuelMachine>Refuel {0}</GM_RefuelMachine>
+  <GM_CannotRefuelMounted>Cannot refuel: motorcycle is mounted.</GM_CannotRefuelMounted>
+  <GM_AlreadyFull>Cannot refuel: fuel tank is already full.</GM_AlreadyFull>
+  <GM_NoChemfuel>Cannot refuel: no reachable chemfuel.</GM_NoChemfuel>
+  <GM_AssemblyComplete>{0} assembly complete.</GM_AssemblyComplete>
+</LanguageData>

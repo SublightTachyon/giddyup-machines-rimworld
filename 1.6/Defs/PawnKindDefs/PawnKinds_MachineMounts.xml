@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>GM_Motorcycle</defName>
+    <label>motorcycle</label>
+    <race>GM_Motorcycle</race>
+    <combatPower>0</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
+    <wildGroupSize>1</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/MachineMount/Motorcycle</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>2.1</drawSize>
+          <shadowData>
+            <volume>(0.35,0.25,0.65)</volume>
+            <offset>(0,0,-0.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

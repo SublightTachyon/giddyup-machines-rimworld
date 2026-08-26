@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>GM_RefuelMachineMount</defName>
+    <driverClass>GiddyUpMachines.Jobs.JobDriver_RefuelMachineMount</driverClass>
+    <reportString>Refueling TargetA.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+</Defs>

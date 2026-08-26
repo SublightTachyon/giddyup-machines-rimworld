@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>GM_Motorcycle</defName>
+    <label>motorcycle</label>
+    <description>A rugged single-seat motorcycle adapted for colony use. It burns chemfuel while travelling and leaves its rider free to use their own weapon.</description>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <MoveSpeed>9.2</MoveSpeed>
+      <MarketValue>750</MarketValue>
+      <Mass>140</Mass>
+      <Flammability>0.35</Flammability>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+      <Wildness>0</Wildness>
+      <MeatAmount>0</MeatAmount>
+      <LeatherAmount>0</LeatherAmount>
+      <ToxicResistance>1</ToxicResistance>
+    </statBases>
+    <race>
+      <thinkTreeMain>GM_MachineMount</thinkTreeMain>
+      <thinkTreeConstant>GM_MachineMount</thinkTreeConstant>
+      <intelligence>Animal</intelligence>
+      <body>GM_MotorcycleBody</body>
+      <fleshType>Mechanoid</fleshType>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHealthScale>2</baseHealthScale>
+      <baseHungerRate>0</baseHungerRate>
+      <foodType>None</foodType>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <trainability>None</trainability>
+      <lifeExpectancy>1000000</lifeExpectancy>
+      <bloodDef>Filth_MachineBits</bloodDef>
+      <bloodSmearDef>Filth_MachineBits</bloodSmearDef>
+      <canBecomeShambler>false</canBecomeShambler>
+      <hediffGiverSets Inherit="False" />
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges>
+    </race>
+    <thingCategories Inherit="False" />
+    <recipes Inherit="False" />
+    <tradeTags Inherit="False" />
+    <inspectorTabs Inherit="False">
+      <li>ITab_Pawn_Health</li>
+    </inspectorTabs>
+    <comps Inherit="False">
+      <li>
+        <compClass>CompAttachBase</compClass>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <fuelCapacity>80</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>0.25</initialFuelPercent>
+        <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="GiddyUpMachines.Comps.CompProperties_MachineMount">
+        <fuelPerCell>0.08</fuelPerCell>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="GiddyUpMachines.Defs.MachineMountExtension">
+        <fuelPerCell>0.08</fuelPerCell>
+        <fuelLabel>Chemfuel</fuelLabel>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>GM_AssembleMotorcycle</defName>
+    <label>assemble motorcycle</label>
+    <description>Assemble a chemfuel motorcycle. The completed assembly becomes a rideable machine Pawn.</description>
+    <thingClass>GiddyUpMachines.Things.Building_MotorcycleAssembler</thingClass>
+    <tickerType>Normal</tickerType>
+    <drawerType>MapMeshOnly</drawerType>
+    <graphicData>
+      <texPath>Things/Pawn/MachineMount/Motorcycle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.4,2.1)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Pawn/MachineMount/Motorcycle</uiIconPath>
+    <uiIconScale>0.8</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <fillPercent>0.1</fillPercent>
+    <size>(1,1)</size>
+    <rotatable>true</rotatable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designationHotKey>Misc1</designationHotKey>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>140</Mass>
+      <Flammability>0.35</Flammability>
+    </statBases>
+  </ThingDef>
+</Defs>
