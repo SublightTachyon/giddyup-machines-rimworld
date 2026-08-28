@@ -2,7 +2,13 @@
 <LanguageData>
   <GM_FuelConsumption>Consumption: {0} chemfuel / cell</GM_FuelConsumption>
   <GM_OutOfFuelMessage>{0} is out of fuel. Its rider has dismounted.</GM_OutOfFuelMessage>
+  <GM_MountMachine>Mount {0}</GM_MountMachine>
   <GM_CannotMountNoFuel>Cannot mount {0}: no chemfuel.</GM_CannotMountNoFuel>
+  <GM_CannotMountWrongFaction>Cannot mount: motorcycle belongs to another faction.</GM_CannotMountWrongFaction>
+  <GM_CannotMountDisabled>Cannot mount: motorcycle is disabled.</GM_CannotMountDisabled>
+  <GM_CannotMountForbidden>Cannot mount: motorcycle is forbidden.</GM_CannotMountForbidden>
+  <GM_CannotMountUnreachable>Cannot mount: no path.</GM_CannotMountUnreachable>
+  <GM_CannotMountMissingGiddyUp>Cannot mount: Giddy-Up's Mount job is unavailable.</GM_CannotMountMissingGiddyUp>
   <GM_RefuelMachine>Refuel {0}</GM_RefuelMachine>
   <GM_CannotRefuelMounted>Cannot refuel: motorcycle is mounted.</GM_CannotRefuelMounted>
   <GM_AlreadyFull>Cannot refuel: fuel tank is already full.</GM_AlreadyFull>

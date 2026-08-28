@@ -10,12 +10,18 @@ chemfuel-powered motorcycle.
   gender, pregnancy, products, taming UI, or training work.
 - Giddy-Up handles mounting, dismounting, rider drawing, mounted movement,
   drafting, and rider combat.
+- A machine-specific right-click **Mount Motorcycle** command bypasses
+  Giddy-Up's animal-only eligibility filters, then hands the ride to
+  Giddy-Up's normal `Mount` job and rider-state system.
 - The rider remains the selected combatant and keeps their equipped weapon.
 - `CompRefuelable` stores chemfuel; `CompMachineMount` consumes 0.08 fuel per
   map cell travelled.
 - Empty motorcycles cannot be mounted. Running out of fuel stops the rider and
   safely ends Giddy-Up's mounted job.
 - A manual right-click refuel job is included.
+- The motorcycle uses directional RimWorld pawn art: a horizontal side profile
+  for east/west movement plus dedicated front and rear views for south/north.
+  RimWorld mirrors the east texture for west automatically.
 - The motorcycle is assembled from the Architect menu after researching
   Machining.
 
@@ -58,10 +64,13 @@ the PawnKindDef is `GM_Motorcycle`.
 1. Enable Harmony, Giddy-Up 2 Continued, and Giddy-Up Machines.
 2. Finish Machining research.
 3. Choose **Architect -> Production -> Assemble motorcycle** and construct it.
-4. Select a colonist, right-click the motorcycle, and choose **Mount**.
+4. Select a colonist, right-click the fueled motorcycle, and choose
+   **Mount Motorcycle**.
 5. Draft the rider and issue movement and attack orders.
-6. Select a colonist and right-click the motorcycle to refuel it with chemfuel.
-7. Let the tank empty and confirm the rider stops and dismounts.
-8. Save and reload while mounted and while dismounted.
+6. Rotate or move in all four directions and confirm the side, front, and rear
+   motorcycle sprites match the rider's facing.
+7. Select a colonist and right-click the motorcycle to refuel it with chemfuel.
+8. Let the tank empty and confirm the rider stops and dismounts.
+9. Save and reload while mounted and while dismounted.
 
 Errors and Harmony diagnostics are written to RimWorld's `Player.log`.
