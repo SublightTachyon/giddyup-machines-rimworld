@@ -13,6 +13,9 @@ chemfuel-powered motorcycle.
 - A machine-specific right-click **Mount Motorcycle** command bypasses
   Giddy-Up's animal-only eligibility filters, then hands the ride to
   Giddy-Up's normal `Mount` job and rider-state system.
+- Factionless and foreign motorcycles can be transferred to the colony with
+  the right-click **Claim Motorcycle** action; machines are claimed, never
+  tamed or trained. Constructed motorcycles already belong to the colony.
 - The rider remains the selected combatant and keeps their equipped weapon.
 - `CompRefuelable` stores chemfuel; `CompMachineMount` consumes 0.08 fuel per
   map cell travelled.
@@ -64,13 +67,15 @@ the PawnKindDef is `GM_Motorcycle`.
 1. Enable Harmony, Giddy-Up 2 Continued, and Giddy-Up Machines.
 2. Finish Machining research.
 3. Choose **Architect -> Production -> Assemble motorcycle** and construct it.
-4. Select a colonist, right-click the fueled motorcycle, and choose
+4. For a motorcycle created with **Debug actions -> Spawn pawn**, select a
+   colonist, right-click it, and choose **Claim Motorcycle** first.
+5. Select a colonist, right-click the fueled motorcycle, and choose
    **Mount Motorcycle**.
-5. Draft the rider and issue movement and attack orders.
-6. Rotate or move in all four directions and confirm the side, front, and rear
+6. Draft the rider and issue movement and attack orders.
+7. Rotate or move in all four directions and confirm the side, front, and rear
    motorcycle sprites match the rider's facing.
-7. Select a colonist and right-click the motorcycle to refuel it with chemfuel.
-8. Let the tank empty and confirm the rider stops and dismounts.
-9. Save and reload while mounted and while dismounted.
+8. Select a colonist and right-click the motorcycle to refuel it with chemfuel.
+9. Let the tank empty and confirm the rider stops and dismounts.
+10. Save and reload while mounted and while dismounted.
 
 Errors and Harmony diagnostics are written to RimWorld's `Player.log`.

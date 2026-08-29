@@ -9,6 +9,10 @@
   <GM_CannotMountForbidden>Cannot mount: motorcycle is forbidden.</GM_CannotMountForbidden>
   <GM_CannotMountUnreachable>Cannot mount: no path.</GM_CannotMountUnreachable>
   <GM_CannotMountMissingGiddyUp>Cannot mount: Giddy-Up's Mount job is unavailable.</GM_CannotMountMissingGiddyUp>
+  <GM_ClaimMachine>Claim {0}</GM_ClaimMachine>
+  <GM_CannotClaimMounted>Cannot claim: motorcycle is currently mounted.</GM_CannotClaimMounted>
+  <GM_CannotClaimDestroyed>Cannot claim: motorcycle is destroyed.</GM_CannotClaimDestroyed>
+  <GM_MachineClaimed>{0} now belongs to your colony.</GM_MachineClaimed>
   <GM_RefuelMachine>Refuel {0}</GM_RefuelMachine>
   <GM_CannotRefuelMounted>Cannot refuel: motorcycle is mounted.</GM_CannotRefuelMounted>
   <GM_AlreadyFull>Cannot refuel: fuel tank is already full.</GM_AlreadyFull>
